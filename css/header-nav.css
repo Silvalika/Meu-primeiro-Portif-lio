@@ -1,0 +1,40 @@
+header {
+    height: 52px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(90deg,  rgb(226, 50, 155), rgb(219, 179, 211));
+    color: rgb(18, 17, 17);
+    z-index: 1;
+}
+
+nav {
+    text-align: center;
+    position: relative;
+}
+
+nav li {
+    display: inline-block;
+    margin: 16px 10px;
+}
+
+nav li:not(:last-child):after {
+    content: "❒";
+    margin-left: 30px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgb(16, 15, 15);
+    transition: 0.3s color;
+}
+
+nav li a:hover{
+    color: rgba(255, 229, 229, 0.5);
+}
+
+@media screen and (max-width:1040px) {
+    header {
+        display: none;
+    }
+}

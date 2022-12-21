@@ -1,0 +1,119 @@
+main {
+    background: rgb(243, 216, 232);
+    padding: 48px 0;
+    color: rgb(36, 30, 34);
+}
+
+main div {
+    width: 1020px;
+    margin: 0 auto;    
+}
+
+.sobre-mim {
+    position: relative;
+}
+
+.foto-sobre-mim {
+    width: 400px;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 1px 1px 16px rgba(82, 4, 56, 0.2);
+}
+
+.texto-sobre-mim {
+    display: inline-block;
+    width: 480px;
+    vertical-align: top;
+    position: absolute;
+    right: 0;
+    top: 48px;
+}
+
+.titulo {
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 48px;
+}
+
+.background-texto {
+    background-color: rgb(243, 231, 231);
+    box-shadow: 1px 1px 16px rgba(82, 4, 56, 0.5);
+    color: rgb(3, 3, 3);
+    padding: 18px;
+    display: inline-block;
+    border-radius: 8px;
+    width: 45%;
+    box-sizing: border-box;
+    vertical-align: top;
+    height: 120px; /*E MUDAR ESSE VALOR, COLOCAR UM VALOR MAIOR */
+}
+
+.background-texto a {
+    color: rgb(225, 14, 14);
+}
+
+.margem-caixas {
+    margin: 2.3%;
+}
+
+.icones-interesses {
+    width: 80px;
+    transition: 0.7s transform;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+
+.icones-interesses:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.display-informacoes-interesses {
+    display: none;
+}
+
+@media screen and (max-width:1040px) {
+    main {
+        padding: 16px 0;
+    }
+    main div {
+        width: 350px;
+        
+        padding: 8px;
+    }
+
+    .foto-sobre-mim {
+        width: 110%;
+        opacity: 0.3;
+        position: relative;
+    }
+
+    .texto-sobre-mim {
+        display: inline-block;
+        width: 400px;
+        text-align:center;
+        right: 0;
+        left: 0;
+        top: 0;
+        margin: 20 auto;
+    }
+
+    .titulo {
+        margin-bottom: 8px;
+        margin-top: 8px;
+    }
+
+    .background-texto {
+        font-size: 15px;
+        width: 100%;
+        height: 300px;
+    }
+
+    .margem-caixas {
+        margin: 0 0 2.3% 0;
+    }
+
+    .icones-interesses {
+        width: 50px;
+    }
+}
